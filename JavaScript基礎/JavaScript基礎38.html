@@ -1,0 +1,38 @@
+<!--再宣言できません
+で定義された変数は再宣言letできません。
+
+誤って変数を再宣言することはできません。
+letあなたとこれを行うことはできません：
+
+let x = "John Doe";
+
+let x = 0;
+
+// SyntaxError: 'x' has already been declared
+-->
+<!--変数の再宣言
+varキーワードを使用して変数を再宣言すると、問題が発生する可能性があります。
+ブロック内の変数を再宣言すると、ブロック外の変数も再宣言されます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using var</h2>
+
+<p id="demo"></p>
+
+<script>
+var  x = 10;
+// Here x is 10
+
+{  
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

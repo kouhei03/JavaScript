@@ -1,0 +1,23 @@
+<!--JavaScript変数の再宣言
+JavaScript変数を再宣言しても、その値は失われません。
+carNameこれらのステートメントの実行後も、変数の値は「Volvo」のままです。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+<p id="demo"></p>
+
+<script>
+var carName = "Volvo";
+var carName;
+document.getElementById("demo").innerHTML = carName;
+</script>
+
+</body>
+</html>
+
+
