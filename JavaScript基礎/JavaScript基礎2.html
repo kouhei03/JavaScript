@@ -1,0 +1,28 @@
+<!--JavaScript表示の可能性
+JavaScriptは、さまざまな方法でデータを「表示」できます。
+
+を使用してHTML要素に書き込むinnerHTML。
+を使用してHTML出力に書き込みますdocument.write()。
+を使用してアラートボックスに書き込むwindow.alert()。
+を使用して、ブラウザコンソールに書き込みconsole.log()ます。
+-->
+<!--innerHTMLの使用
+HTML要素にアクセスするために、JavaScriptはdocument.getElementById(id)メソッドを使用できます。
+
+id属性は、HTML要素を定義します。このinnerHTML プロパティは、HTMLコンテンツを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html> 
