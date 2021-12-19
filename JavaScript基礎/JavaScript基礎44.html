@@ -1,0 +1,42 @@
+<!--定数オブジェクトと配列
+キーワードconstは少し誤解を招くです。
+
+定数値を定義するものではありません。値への定数参照を定義します。
+
+このため、次のことはできません。
+
+定数値を再割り当てします
+定数配列を再割り当てします
+定数オブジェクトを再割り当てします
+でも君ならできる：
+
+定数配列の要素を変更します
+定数オブジェクトのプロパティを変更する-->
+<!--定数配列
+定数配列の要素を変更できます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript const</h2>
+
+<p>Declaring a constant array does NOT make the elements unchangeble:</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
+
+</body>
+</html>

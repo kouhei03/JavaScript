@@ -1,0 +1,50 @@
+<!--再宣言
+JavaScriptvar変数の再宣言は、プログラムのどこでも許可されています。
+例
+var x = 2;     // Allowed
+var x = 3;     // Allowed
+x = 4;         // Allowed
+-->
+<!--同じスコープ内で、既存varまたはlet 変数をに再宣言するconstことは許可されていません。
+
+例
+var x = 2;     // Allowed
+const x = 2;   // Not allowed
+
+{
+let x = 2;     // Allowed
+const x = 2;   // Not allowed
+}
+
+{
+const x = 2;   // Allowed
+const x = 2;   // Not allowed
+}
+const同じスコープ内の既存の変数を再割り当てすることは許可されていません。
+
+例
+const x = 2;     // Allowed
+x = 2;           // Not allowed
+var x = 2;       // Not allowed
+let x = 2;       // Not allowed
+const x = 2;     // Not allowed
+
+{
+  const x = 2;   // Allowed
+  x = 2;         // Not allowed
+  var x = 2;     // Not allowed
+  let x = 2;     // Not allowed
+  const x = 2;   // Not allowed
+}
+const別のスコープまたは別のブロックで、変数を再宣言できます。
+
+例
+const x = 2;       // Allowed
+
+{
+  const x = 3;   // Allowed
+}
+
+{
+  const x = 4;   // Allowed
+}-->

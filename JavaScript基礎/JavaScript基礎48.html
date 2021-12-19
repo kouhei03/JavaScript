@@ -1,0 +1,22 @@
+<!--コンストホイスト
+で定義された変数がvarされている掲揚トップにして任意の時点で初期化することができます。
+意味：宣言する前に変数を使用できます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+
+<p>With <b>var</b>, you can use a variable before it is declared:</p>
+
+<p id="demo"></p>
+
+<script>
+carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+var carName;
+</script>
+
+</body>
+</html>
