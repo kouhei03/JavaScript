@@ -1,0 +1,21 @@
+<!--（）演算子は関数を呼び出します
+上記の例を使用して、toCelsiusは関数オブジェクトをtoCelsius()参照し、関数の結果を 参照します。
+（）なしで関数にアクセスすると、関数の結果ではなく関数オブジェクトが返されます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Accessing a function without () will return the function definition instead of the function result:</p>
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+</script>
+
+</body>
+</html>

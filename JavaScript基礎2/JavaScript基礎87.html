@@ -1,0 +1,58 @@
+<!--JavaScript関数
+JavaScript関数は、特定のタスクを実行するために設計されたコードのブロックです。
+JavaScript関数は、「何か」がそれを呼び出す（呼び出す）ときに実行されます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>
+
+<!--JavaScript関数の構文
+JavaScript関数は、functionキーワード、名前、括弧（）で定義されます。
+
+関数名には、文字、数字、アンダースコア、ドル記号を含めることができます（変数と同じルール）。
+
+括弧には、コンマで区切られたパラメーター名を含めることができます：
+（parameter1、parameter2、...）
+
+関数によって実行されるコードは、中括弧内に配置されます：{}
+
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+関数パラメーターは、関数定義の括弧（）内にリストされています。
+
+関数の引数は、 関数が呼び出されたときに関数が受け取る値です。
+
+関数内では、引数（パラメーター）はローカル変数として動作します。
+-->
+<!--関数の呼び出し
+関数内のコードは、「何か」が関数を呼び出す（呼び出す）ときに実行されます。
+
+イベントが発生したとき（ユーザーがボタンをクリックしたとき）
+JavaScriptコードから呼び出された（呼び出された）とき
+自動的に（自己呼び出し）
+このチュートリアルの後半で、関数の呼び出しについてさらに詳しく学習します。
+
+関数の戻り
+JavaScriptがreturnステートメントに到達すると、関数は実行を停止します。
+
+関数がステートメントから呼び出された場合、JavaScriptは「戻り」、呼び出しステートメントの後にコードを実行します。
+
+関数は多くの場合、戻り値を計算します。戻り値は「呼び出し元」に「返されます」。
+-->
