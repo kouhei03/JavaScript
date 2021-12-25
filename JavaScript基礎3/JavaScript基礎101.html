@@ -1,0 +1,28 @@
+<!--JavaScriptイベント
+HTMLイベントは、HTML要素に発生する「もの」です。
+JavaScriptがHTMLページで使用されている場合、JavaScriptはこれらのイベントに 「反応」することができます。
+HTMLイベント
+HTMLイベントは、ブラウザーが実行するものでも、ユーザーが実行するものでもかまいません。
+
+HTMLイベントの例を次に示します。
+
+HTMLWebページの読み込みが完了しました
+HTML入力フィールドが変更されました
+HTMLボタンがクリックされました
+多くの場合、イベントが発生したときに、何かをしたいと思うかもしれません。
+
+JavaScriptを使用すると、イベントが検出されたときにコードを実行できます。
+
+HTMLを使用すると、JavaScriptコードを使用してイベントハンドラー属性をHTML要素に追加できます。
+次の例では、onclick属性（コード付き）が<button>要素に追加されてい ます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
