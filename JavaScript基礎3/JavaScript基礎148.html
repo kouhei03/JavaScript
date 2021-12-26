@@ -1,0 +1,32 @@
+<!--JavaScript文字列search（）
+このsearch()メソッドは、指定された値の文字列を検索し、一致する位置を返します。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.search("locate");
+</script>
+
+</body>
+</html>
+
+<!--気づきましたか？
+二つの方法は、indexOf()とsearch()、ある等しいですか？
+
+それらは同じ引数（パラメーター）を受け入れ、同じ値を返しますか？
+
+2つの方法は等しくありません。違いは次のとおりです。
+
+このsearch()メソッドは、2番目の開始位置引数を取ることができません。
+このindexOf()メソッドは、強力な検索値（正規表現）を取得できません。
+正規表現については、後の章で詳しく説明します。-->

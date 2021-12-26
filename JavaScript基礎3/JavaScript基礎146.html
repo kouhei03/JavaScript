@@ -1,0 +1,21 @@
+<!--どちらの方法も、検索の開始位置として2番目のパラメーターを受け入れます。
+lastIndexOf()後方（先頭に終わりから）メソッドを検索し、意味：2番目のパラメータがある場合15、
+検索は、文字列の先頭に位置15、および検索から始まります。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate",15);
+</script>
+
+</body>
+</html>
+

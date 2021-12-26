@@ -1,0 +1,23 @@
+<!--lastIndexOf()後方（先頭に終わりから）メソッドを検索し、意味：2番目のパラメータがある場合15、
+    検索は、文字列の先頭に位置15、および検索から始まります。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+<p>Position 15 is position 15 from the beginning.</p>
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.lastIndexOf("locate", 15);
+</script>
+
+</body>
+</html>
+
