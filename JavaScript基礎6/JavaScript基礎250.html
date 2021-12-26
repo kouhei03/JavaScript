@@ -1,0 +1,36 @@
+<!--アレイのスプライシングとスライシング
+このsplice()メソッドは、新しいアイテムを配列に追加します。
+
+このslice()メソッドは、配列の一部をスライスします。
+
+JavaScript配列splice（）
+このsplice()メソッドを使用して、配列に新しいアイテムを追加できます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<h2>splice()</h2>
+<p>The splice() method adds new elements to an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
+<!--最初のパラメータ（2）は、位置規定する新たな要素がなければならない 追加（にスプライスさを）。
+
+2番目のパラメーター（0）は、削除する要素の数を 定義します。
+
+残りのパラメーター（ "Lemon"、 "Kiwi"）は、追加する新しい要素を定義します 。
+
+-->
