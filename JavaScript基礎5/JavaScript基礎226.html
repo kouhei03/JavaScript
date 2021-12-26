@@ -1,0 +1,32 @@
+<!--配列を使用する場合。オブジェクトを使用する場合。
+JavaScriptは連想配列をサポートしていません。
+要素名を文字列（テキスト）にする場合 は、オブジェクトを使用する必要があります。
+要素名を数字にする場合は、配列を使用する必要があり ます。
+JavaScript new Array（）
+JavaScriptには配列コンストラクターが組み込まれていnew Array()ます。
+
+ただし、[]代わりに安全に使用できます。
+
+これらの2つの異なるステートメントは両方とも、pointsという名前の新しい空の配列を作成します。
+
+const points = new Array();
+const points = [];
+これらの2つの異なるステートメントは両方とも、6つの数値を含む新しい配列を作成します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Avoid using new Array(). Use [] instead.</p>
+
+<p id="demo"></p>
+
+<script>
+//const points = new Array(40, 100, 1, 5, 25, 10);
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points[0];  
+</script>
+
+</body>
+</html>
