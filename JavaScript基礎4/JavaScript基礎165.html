@@ -1,0 +1,27 @@
+<!--JavaScriptの数値は常に64ビット浮動小数点です
+他の多くのプログラミング言語とは異なり、JavaScriptは、整数、短い、長い、浮動小数点など、さまざまな種類の数値を定義しません。
+
+JavaScript番号は、国際IEEE 754標準に従って、常に倍精度浮動小数点数として格納されます。
+
+この形式では、数値は64​​ビットで格納され、数値（小数部）はビット0〜51に格納され、指数はビット52〜62に格納され、符号はビット63に格納されます。-->
+<!--整数（ピリオドまたは指数表記のない数値）は、最大15桁の精度です。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 999999999999999;
+let y = 9999999999999999;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+</body>
+</html>
+
+
