@@ -1,0 +1,26 @@
+<!--シフト要素
+シフトはポップと同じですが、最後の要素ではなく最初の要素で作業します。
+
+JavaScript配列shift（）
+このshift()メソッドは、最初の配列要素を削除し、他のすべての要素をより低いインデックスに「シフト」します。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>shift()</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+</body>
+</html>
