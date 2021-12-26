@@ -1,0 +1,29 @@
+<!--数値メソッドとプロパティ
+プリミティブ値（3.14や2014など）は、プロパティとメソッドを持つことができません（オブジェクトではないため）。
+
+ただし、JavaScriptでは、メソッドとプロパティを実行するときに
+JavaScriptがプリミティブ値をオブジェクトとして扱うため、メソッドとプロパティもプリミティブ値で使用できます。
+
+toString（）メソッド
+このtoString()メソッドは、数値を文字列として返します。
+すべての数値メソッドは、任意のタイプの数値（リテラル、変数、または式）で使用できます-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number Methods</h2>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123;
+document.getElementById("demo").innerHTML =
+  x.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+</script>
+
+</body>
+</html>
