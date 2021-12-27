@@ -1,0 +1,26 @@
+<!--Math.sin（）
+Math.sin(x) 角度x（ラジアンで指定）の正弦（-1から1の間の値）を返します。
+
+ラジアンの代わりに度を使用する場合は、度をラジアンに変換する必要があります。
+
+ラジアン単位の角度=度単位の角度xPI / 180。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.sin()</h2>
+
+<p>Math.sin(x) returns the sin of x (given in radians):</p>
+<p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+</script>
+
+</body>
+</html>
