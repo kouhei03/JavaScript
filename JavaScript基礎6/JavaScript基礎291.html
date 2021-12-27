@@ -1,0 +1,25 @@
+<!--JavaScript配列find（）
+このfind()メソッドは、テスト関数に合格した最初の配列要素の値を返します。
+
+この例では、18より大きい最初の要素を検索（の値を返します）します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.find()</h2>
+<p id="demo"></p>
+
+<script>
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+</body>
+</html>
