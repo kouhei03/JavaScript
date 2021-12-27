@@ -1,0 +1,31 @@
+<!--JavaScript配列map（）
+このmap()メソッドは、各配列要素に対して関数を実行することにより、新しい配列を作成します。
+このmap()メソッドは、値のない配列要素に対して関数を実行しません。
+
+このmap()メソッドは元の配列を変更しません。
+この例では、各配列値に2を掛けます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.map()</h2>
+<p>Creates a new array by performing a function on each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!--最高（または最低）の配列値を見つける
+配列内の最大値または最小値を見つけるための組み込み関数はありません。
+
+ただし、配列を並べ替えた後は、インデックスを使用して最大値と最小値を取得できます。
+昇順で並べ替え：-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>The lowest number is <span id="demo"></span>.</p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+document.getElementById("demo").innerHTML = points[0];
+</script>
+
+</body>
+</html>
+

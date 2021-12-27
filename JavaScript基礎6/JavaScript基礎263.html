@@ -1,0 +1,52 @@
+<!--比較機能
+比較関数の目的は、代替のソート順を定義することです。
+
+比較関数は、引数に応じて、負、ゼロ、または正の値を返す必要があります。
+
+function(a, b){return a - b}
+このsort()関数は2つの値を比較するときに、その値をcompare関数に送信し、返された（負、ゼロ、正）値に従って値を並べ替えます。
+
+結果が負の場合は、のa前にソートされ bます。
+
+結果が正の場合、のb前にソートされaます。
+
+結果が0の場合、2つの値のソート順は変更されません。
+
+
+比較関数は、配列内のすべての値を一度に2つの値で比較します(a, b)。
+
+40と100を比較する場合、sort()メソッドはcompare関数（40、100）を呼び出します。
+
+この関数は40〜100を計算し(a - b)、結果が負（-60）であるため、並べ替え関数は40を100未満の値として並べ替えます。
+
+このコードスニペットを使用して、数値およびアルファベット順の並べ替えを試すことができます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
