@@ -1,0 +1,27 @@
+<!--日付を比較する
+日付は簡単に比較できます。
+次の例では、今日の日付を2100年1月14日と比較しています。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let text;
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

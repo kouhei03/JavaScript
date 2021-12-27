@@ -1,0 +1,22 @@
+<!--JavaScriptの日付設定メソッド
+Set Dateメソッドを使用すると、Dateオブジェクトの日付値（年、月、日、時間、分、秒、ミリ秒）を設定できます。-->
+
+<!--setFullYear（）メソッド
+このsetFullYear()メソッドは、日付オブジェクトの年を設定します。この例では2020年まで：-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript setFullYear()</h2>
+<p>The setFullYear() method sets the year of a date object:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+d.setFullYear(2020);
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
