@@ -1,0 +1,19 @@
+<!--日付入力-日付の解析
+有効な日付文字列がある場合は、この Date.parse()メソッドを使用してミリ秒に変換できます。
+Date.parse() 日付から1970年1月1日までのミリ秒数を返します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Date.parse()</h2>
+<p>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</p>
+
+<p id="demo"></p>
+
+<script>
+const msec = Date.parse("March 21, 2012");
+document.getElementById("demo").innerHTML = msec;
+</script>
+
+</body>
+</html>

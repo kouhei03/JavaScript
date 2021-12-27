@@ -1,0 +1,35 @@
+<!--JavaScriptの日付入力
+JavaScriptの日付入力形式には、一般的に3つのタイプがあります。
+
+タイプ	例
+ISO日付	「2015-03-25」（国際規格）
+短い日付	「2015年3月25日」
+長い日付	「2015年3月25日」または「2015年3月25日」-->
+
+<!--JavaScriptの日付出力
+入力形式に関係なく、JavaScriptは（デフォルトで）日付をフルテキスト文字列形式で出力します。
+
+Tue Dec 28 2021 07:04:11 GMT+0900 (日本標準時)
+
+JavaScriptISO日付
+ISO 8601は、日付と時刻の表現に関する国際標準です。
+
+ISO 8601構文（YYYY-MM-DD）も、推奨されるJavaScriptの日付形式です。
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript ISO Dates</h2>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date("2015-03-25");
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
