@@ -1,0 +1,29 @@
+<!--オブジェクトとしてのJavaScriptブール値
+通常、JavaScriptブール値はリテラルから作成されたプリミティブ値です。
+
+let x = false;
+ただし、ブール値は、キーワードnew：を使用してオブジェクトとして定義することもできます。
+
+let y = new Boolean(false);-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>Booleans and Boolean objects cannot be safely compared:</p>
+
+<p id="demo"></p>
+
+<script>
+// x is a boolean
+let x = false;
+
+// y is an object
+let y = new Boolean(false);
+
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+</script>
+
+</body>
+</html>
