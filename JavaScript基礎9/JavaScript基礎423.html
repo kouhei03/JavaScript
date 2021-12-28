@@ -1,0 +1,27 @@
+<!--default場合は、スイッチブロック内の最後のケースである必要はありません。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  default:
+    text = "Looking forward to the Weekend";
+    break;
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

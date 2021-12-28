@@ -1,0 +1,64 @@
+<!--JavaScriptSwitchステートメント
+switchステートメントを使用して、実行する多くのコードブロックの1つを選択します。
+
+構文
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+仕組みは次のとおりです。
+
+スイッチ式は1回評価されます。
+式の値は、各ケースの値と比較されます。
+一致するものがある場合、関連するコードブロックが実行されます。
+一致するものがない場合、デフォルトのコードブロックが実行されます。-->
+
+<!--このgetDay()メソッドは、平日を0から6までの数値として返します。
+
+（日曜日= 0、月曜日= 1、火曜日= 2 ..）
+
+この例では、曜日番号を使用して曜日名を計算します。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+</body>
+</html>

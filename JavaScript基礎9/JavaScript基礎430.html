@@ -1,0 +1,32 @@
+<!--ステートメント3
+多くの場合、ステートメント3は初期変数の値をインクリメントします。
+
+これは常に当てはまるわけではなく、JavaScriptは関係なく、ステートメント3はオプションです。
+
+ステートメント3は、負の増分（i--）、正の増分（i = i + 15）、またはその他のことを実行できます。
+
+ステートメント3は省略できます（ループ内で値をインクリメントする場合など）。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+let i = 0;
+let len = cars.length;
+let text = "";
+
+for (; i < len; ) {
+  text += cars[i] + "<br>";
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

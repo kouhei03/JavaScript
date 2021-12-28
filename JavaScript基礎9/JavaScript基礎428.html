@@ -1,0 +1,25 @@
+<!--ステートメント1
+通常、ステートメント1を使用して、ループで使用される変数を初期化します（i = 0とします）。
+
+これは常に当てはまるわけではなく、JavaScriptは気にしません。ステートメント1はオプションです。
+
+ステートメント1（コンマで区切る）で多くの値を開始できます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i, len, text;
+for (i = 0, len = cars.length, text = ""; i < len; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

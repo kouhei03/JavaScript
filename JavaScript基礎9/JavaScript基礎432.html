@@ -1,0 +1,20 @@
+<!--番目の例では、を使用letして、ループ内で宣言された変数は、ループ外の変数を再宣言しません。
+letがループ内でi変数を宣言するために使用される場合、i変数はループ内でのみ表示されます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript let</h2>
+
+<p id="demo"></p>
+
+<script>
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  // some statements
+}
+document.getElementById("demo").innerHTML = i;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--elseifステートメント
+else if最初の条件がfalseの場合は、ステートメントを使用して新しい条件を指定します。
+
+構文
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+時間が10:00未満の場合は「おはよう」の挨拶を作成し、そうでない場合は20:00未満の場合は「おはよう」の挨拶を作成し、それ以外の場合は「こんばんは」を作成します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>

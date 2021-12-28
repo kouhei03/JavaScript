@@ -1,0 +1,31 @@
+<!--Forループ
+forループの構文は次のとおりです。
+
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+ステートメント1は、コードブロックの実行前に（1回）実行されます。
+
+ステートメント2は、コードブロックを実行するための条件を定義します。
+ステートメント3は、コードブロックが実行された後に（毎回）実行されます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

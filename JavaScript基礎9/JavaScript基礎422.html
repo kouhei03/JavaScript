@@ -1,0 +1,32 @@
+<!--デフォルトのキーワード
+defaultキーワードは、ケースの一致がない場合に実行するコードを指定します。
+
+このgetDay()メソッドは、平日を0から6までの数値として返します。
+
+今日が土曜日（6）でも日曜日（0）でもない場合は、デフォルトのメッセージを記述します。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

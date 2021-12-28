@@ -1,0 +1,35 @@
+<!--elseステートメント
+このelseステートメントを使用して、条件がfalseの場合に実行されるコードのブロックを指定します。
+
+if (condition) {
+  //  block of code to be executed if the condition is true
+} else {
+  //  block of code to be executed if the condition is false
+}
+例
+時間が18未満の場合は、「こんばんは」の挨拶を作成します。それ以外の場合は、「こんばんは」を作成します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>
