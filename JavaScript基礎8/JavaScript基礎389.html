@@ -1,0 +1,25 @@
+<!--適切なランダム関数
+上記の例からわかるように、すべての乱数の目的に使用する適切なランダム関数を作成することをお勧めします。
+
+このJavaScript関数は、常にmin（含まれる）とmax（除外される）の間の乱数を返します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
+and 9 (both included):</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
