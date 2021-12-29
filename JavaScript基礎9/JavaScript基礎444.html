@@ -1,0 +1,27 @@
+<!--継続ステートメント
+continue文の区切り（ループで）一回の反復、指定された条件が発生し、ループの次の繰り返しを継続した場合でも。
+この例では、3の値をスキップします。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>continue</b> statement.</p>
+
+<p>A loop which will skip the step where i = 3.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
