@@ -1,0 +1,26 @@
+<!--exec（）の使用
+exec()この方法は、RegExp表現方法です。
+
+文字列で指定されたパターンを検索し、見つかったテキストをオブジェクトとして返します。
+
+一致するものが見つからない場合は、空の（null）オブジェクトを返します。
+
+次の例では、文字列で文字「e」を検索します。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p id="demo"></p>
+
+<script>
+const obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+
+</body>
+</html>

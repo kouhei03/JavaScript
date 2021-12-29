@@ -1,0 +1,26 @@
+<!--自動型変換
+JavaScriptが「間違った」データ型を操作しようとすると、値を「正しい」型に変換しようとします。
+結果は必ずしもあなたが期待するものではありません：-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Type Conversions</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+(5 + null) + "<br>"  +
+("5" + null) + "<br>" +
+("5" + 2) + "<br>" +
+("5" - 2) + "<br>" +
+("5" * "2") + "<br>" +
+("5" / "2") + "<br>"
+</script>
+
+</body>
+</html>
+
+
