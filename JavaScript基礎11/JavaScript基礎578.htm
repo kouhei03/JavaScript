@@ -1,0 +1,22 @@
+<!--this関数のキーワードは、厳密モードでは動作が異なります。
+
+thisキーワードは、関数を呼び出したオブジェクトを参照します。
+
+オブジェクトが指定されていない場合、厳密モードのundefined関数は戻り、通常モードの関数はグローバルオブジェクト（ウィンドウ）を返します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Inside functions, the "this" keyword is no longer the global object if not specified:</h3>
+
+<script>
+"use strict";
+function myFunction() {
+  alert(this);
+}
+myFunction();
+</script>
+
+</body>
+</html>

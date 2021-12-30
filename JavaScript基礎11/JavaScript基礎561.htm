@@ -1,0 +1,26 @@
+<!--「厳密な使用」指令
+この"use strict"ディレクティブは、ECMAScriptバージョン5で新しく追加されました。
+
+これはステートメントではなく、以前のバージョンのJavaScriptでは無視されていたリテラル式です。
+
+の目的は"use strict"、コードを「厳密モード」で実行する必要があることを示すことです。
+
+strictモードでは、たとえば、宣言されていない変数を使用することはできません。
+
+Internet Explorer 9以下を除き、最新のブラウザはすべて「厳密に使用」をサポートしています。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<h3>Using a variable without declaring it, is not allowed.</h3>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+
+<script>
+"use strict";
+x = 3.14;  // This will cause an error (x is not defined).
+</script>
+
+</body>
+</html>
