@@ -1,0 +1,25 @@
+<!--オブジェクトリテラルの使用
+これは、JavaScriptオブジェクトを作成する最も簡単な方法です。
+オブジェクトリテラルを使用して、1つのステートメントでオブジェクトを定義および作成します。
+
+オブジェクトリテラルは、中括弧{}内のname：valueペア（age：50など）のリストです。
+次の例では、4つのプロパティを持つ新しいJavaScriptオブジェクトを作成します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {firstName:"John", lastName:"Doe", age:50,eyeColor:"blue"};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>

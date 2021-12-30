@@ -1,0 +1,25 @@
+<!--JavaScript変数には多くの値を含めることもできます。
+オブジェクトも変数です。ただし、オブジェクトには多くの値を含めることができます。
+オブジェクトの値は、名前：値のペア（コロンで区切られた名前と値）として記述されます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Creating an object:</p>
+
+<p id="demo"></p>
+
+<script>
+let person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+</script>
+
+</body>
+</html>
