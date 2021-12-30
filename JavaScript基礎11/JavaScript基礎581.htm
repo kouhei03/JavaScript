@@ -1,0 +1,21 @@
+<!--これだけ
+単独で使用する場合、所有者はグローバルオブジェクトであるため、グローバルオブジェクトをthis参照します。
+ブラウザウィンドウでは、グローバルオブジェクトは[object Window]次のとおりです。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+
+<p>In this example, <b>this</b> refers to the window Object:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = this;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

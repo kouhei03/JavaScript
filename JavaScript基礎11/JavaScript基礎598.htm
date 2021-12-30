@@ -1,0 +1,56 @@
+<!--コンストラクターメソッド
+コンストラクターメソッドは特別なメソッドです。
+
+正確な名前は「コンストラクター」である必要があります
+新しいオブジェクトが作成されると自動的に実行されます
+オブジェクトのプロパティを初期化するために使用されます
+コンストラクターメソッドを定義しない場合、JavaScriptは空のコンストラクターメソッドを追加します。
+
+クラスメソッド
+クラスメソッドは、オブジェクトメソッドと同じ構文で作成されます。
+
+キーワードclassを使用してクラスを作成します。
+
+常にconstructor()メソッドを追加してください。
+
+次に、任意の数のメソッドを追加します。
+構文
+class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+}
+Carageを返す「age」という名前のClassメソッドを作成します。
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+
+<p>How to define and use a Class method.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</script>
+
+</body>
+</html>

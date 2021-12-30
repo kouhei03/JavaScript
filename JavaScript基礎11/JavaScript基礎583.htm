@@ -1,0 +1,23 @@
+<!--関数内のこれ（デフォルト）
+JavaScript関数では、関数の所有者がのデフォルトのバインディングですthis。
+したがって、関数でthisは、グローバルオブジェクトを参照します[object Window]。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+
+<p>In this example, <b>this</b> represents the object that "owns" myFunction:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = myFunction();
+function myFunction() {
+  return this;
+}
+</script>
+
+</body>
+</html>

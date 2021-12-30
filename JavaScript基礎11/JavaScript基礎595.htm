@@ -1,0 +1,49 @@
+<!--どうthisですか？
+this矢印関数の扱いも通常の関数とは異なります。
+
+要するに、矢印関数ではthis。のバインディングはありません 。
+
+通常の関数では、thisキーワードは関数を呼び出すオブジェクトを表します。これは、ウィンドウ、ドキュメント、ボタンなどです。
+
+矢印関数を使用すると、thisキーワードは常に矢印関数を定義したオブジェクトを表します。
+
+違いを理解するために、2つの例を見てみましょう。
+
+どちらの例も、メソッドを2回呼び出します。最初はページが読み込まれたとき、もう1回はユーザーがボタンをクリックしたときです。
+
+最初の例では通常の関数を使用し、2番目の例では矢印関数を使用しています。
+結果は、最初の例が2つの異なるオブジェクト（ウィンドウとボタン）を返し、
+2番目の例がウィンドウオブジェクトを2回返すことを示しています。これは、ウィンドウオブジェクトが関数の「所有者」であるためです。-->
+
+<!--通常の関数thisでは、関数を呼び出すオブジェクトを表します。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript "this"</h2>
+
+<p>This example demonstrate that in a regular function, the "this" keyword represents different objects depending on how the function was called.</p>
+
+<p>Click the button to execute the "hello" function again, and you will see that this time "this" represents the button object.</p>
+
+<button id="btn">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+var hello;
+
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+</body>
+</html>
