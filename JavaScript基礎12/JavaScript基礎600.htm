@@ -1,0 +1,93 @@
+<!--JavaScript JSON
+JSONは、データを保存および転送するための形式です。
+
+JSONは、データがサーバーからWebページに送信されるときによく使用されます。
+
+JSONとは何ですか？
+JSONの略J AVA S CRIPT O bject N otation
+JSONは軽量のデータ交換形式です
+JSONは言語に依存しません*
+JSONは「自己記述型」であり、理解しやすいものです
+* JSON構文はJavaScriptオブジェクト表記構文から派生していますが、JSON形式はテキストのみです。JSONデータを読み取って生成するためのコードは、任意のプログラミング言語で記述できます。
+
+JSONの例
+このJSON構文は、employeesオブジェクトを定義します。3つのemployeeレコード（オブジェクト）の配列：
+
+JSONの例
+{
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+JSON形式はJavaScriptオブジェクトに評価されます
+JSON形式は、JavaScriptオブジェクトを作成するためのコードと構文的に同じです。
+
+この類似性により、JavaScriptプログラムはJSONデータをネイティブJavaScriptオブジェクトに簡単に変換できます。
+JSONデータ-名前と値
+JSONデータは、JavaScriptオブジェクトのプロパティと同様に、名前と値のペアとして書き込まれます。
+
+名前と値のペアは、フィールド名（二重引用符で囲んだもの）、コロン、値で構成されます。
+
+"firstName":"John"
+JSONオブジェクト
+JSONオブジェクトは中括弧で囲まれています。
+
+JavaScriptの場合と同様に、オブジェクトには複数の名前と値のペアを含めることができます。
+
+{"firstName":"John", "lastName":"Doe"}
+JSON配列
+JSON配列は、角かっこで囲まれています。
+
+JavaScriptの場合と同様に、配列にはオブジェクトを含めることができます。
+
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+上記の例では、オブジェクト「employees」は配列です。3つのオブジェクトが含まれています。
+
+各オブジェクトは、人の記録です（名と姓）。
+
+JSONテキストをJavaScriptオブジェクトに変換する
+JSONの一般的な使用法は、Webサーバーからデータを読み取り、そのデータをWebページに表示することです。
+
+簡単にするために、これは入力として文字列を使用して示すことができます。
+
+まず、JSON構文を含むJavaScript文字列を作成します。
+
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+次に、JavaScript組み込み関数JSON.parse()を使用して、文字列をJavaScriptオブジェクトに変換します。
+
+const obj = JSON.parse(text);
+最後に、ページで新しいJavaScriptオブジェクトを使用します。
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+</body>
+</html>

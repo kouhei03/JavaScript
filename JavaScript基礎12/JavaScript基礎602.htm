@@ -1,0 +1,27 @@
+<!--デバッガキーワード
+debuggerキーワードには、JavaScriptの実行、およびコール（利用可能な場合）、デバッグ機能を停止します。
+
+これは、デバッガーでブレークポイントを設定するのと同じ機能を持っています。
+
+使用可能なデバッグがない場合、デバッガーステートメントは効果がありません。
+
+デバッガーをオンにすると、このコードは3行目を実行する前に実行を停止します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Debugger</h2>
+
+<p id="demo"></p>
+
+<p>With the debugger turned on, the code below should stop executing before it executes the third line.</p>
+
+<script>
+let x = 15 * 5;
+debugger;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
