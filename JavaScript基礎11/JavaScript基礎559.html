@@ -1,0 +1,26 @@
+<!--JavaScriptの初期化は引き上げられません
+JavaScriptは宣言のみを持ち上げ、初期化は行いません。
+
+例1では、例2と同じ結果は得られ ません。
+最後の例でyが定義されていないことは意味がありますか？
+
+これは、初期化（= 7）ではなく、宣言（var y）のみが一番上に持ち上げられるためです。
+
+巻き上げのため、yは使用される前に宣言されていますが、初期化が巻き上げられていないため、yの値は未定義です。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;  // Initialize x
+
+elem = document.getElementById("demo");      // Find an element 
+elem.innerHTML = "x is " + x + " and y is " + y;  // Display x and y
+
+var y = 7;  // Initialize y
+</script>
+
+</body>
+</html> 

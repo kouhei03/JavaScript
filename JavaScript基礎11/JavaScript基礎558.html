@@ -1,0 +1,22 @@
+<!--JavaScriptの初期化は引き上げられません
+JavaScriptは宣言のみを持ち上げ、初期化は行いません。
+
+例1では、例2と同じ結果は得られ ません。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5; // Initialize x
+var y = 7; // Initialize y
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;       // Display x and y
+
+</script>
+
+</body>
+</html> 

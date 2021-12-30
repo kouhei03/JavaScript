@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5; // Initialize x
+var y;   // Declare y
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x + " " + y;       // Display x and y
+
+y = 7;   // Assign 7 to y
+
+</script>
+
+</body>
+</html> 
+
+<!--変数を一番上に宣言してください！
+巻き上げは（多くの開発者にとって）JavaScriptの未知のまたは見落とされた振る舞いです。
+
+開発者が巻き上げを理解していない場合、プログラムにバグ（エラー）が含まれている可能性があります。
+
+バグを回避するために、常にすべてのスコープの先頭ですべての変数を宣言してください。
+
+これはJavaScriptがコードを解釈する方法であるため、常に適切なルールです。-->

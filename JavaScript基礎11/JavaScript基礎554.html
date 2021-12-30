@@ -1,0 +1,24 @@
+<!--JavaScript宣言が引き上げられます
+JavaScriptでは、変数は使用後に宣言できます。
+
+言い換えると; 変数は、宣言される前に使用できます。
+例1では、例2と同じ結果が得られます。-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+x = 5; // Assign 5 to x
+
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;           // Display x in the element
+
+var x; // Declare x
+</script>
+
+</body>
+</html> 
+

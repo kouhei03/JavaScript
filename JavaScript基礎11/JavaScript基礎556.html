@@ -1,0 +1,31 @@
+<!--letおよびconstキーワード
+変数はで定義されたletとconstブロックの上に掲揚されているではなく、初期化。
+意味：コードのブロックは変数を認識していますが、宣言されるまで使用できません。
+
+let宣言される前に変数を使用すると、結果はになり ReferenceErrorます。
+変数は、ブロックの開始から宣言されるまで「一時的なデッドゾーン」にあります。
+
+例
+これにより、次のようになりReferenceErrorます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Hoisting</h2>
+<p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+<p id="demo"></p>
+
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--自動的にグローバル
+宣言されていない変数に値を割り当てると、その変数は自動的にGLOBALになります変数にます。
+
+このコード例ではcarName、値が関数内で割り当てられている場合でも、グローバル変数を宣言します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Global Variables</h2>
+<p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</p>
+
+<p id="demo"></p>
+
+<script>
+myFunction();
+// code here can use carName as a global variable
+document.getElementById("demo").innerHTML = "I can display " + carName;
+
+function myFunction() {
+  carName = "Volvo";
+}
+</script>
+
+</body>
+</html>
