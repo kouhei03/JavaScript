@@ -1,0 +1,46 @@
+<!--プロトタイプの継承
+すべてのJavaScriptオブジェクトは、プロトタイプからプロパティとメソッドを継承します。
+
+Date オブジェクトはから継承します Date.prototype
+Array オブジェクトはから継承します Array.prototype
+Person オブジェクトはから継承します Person.prototype
+Object.prototypeプロトタイプ継承チェーンの最上部にあります：
+
+Dateオブジェクト、Arrayオブジェクト、およびPersonオブジェクトはから継承しObject.prototypeます。
+
+オブジェクトへのプロパティとメソッドの追加
+特定のタイプの既存のすべてのオブジェクトに新しいプロパティ（またはメソッド）を追加したい場合があります。
+
+オブジェクトコンストラクターに新しいプロパティ（またはメソッド）を追加したい場合があります。
+
+プロトタイププロパティの使用
+JavaScriptprototypeプロパティを使用すると、オブジェクトコンストラクタに新しいプロパティを追加できます。
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>The prototype property allows you to add new methods to objects constructors:</p>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.prototype.nationality = "English";
+
+const myFather = new Person("John", "Doe", 50, "blue");
+document.getElementById("demo").innerHTML =
+"The nationality of my father is " + myFather.nationality; 
+</script>
+
+</body>
+</html>
