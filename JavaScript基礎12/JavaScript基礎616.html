@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Properties</h2>
+<p>Deleting object properties.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+delete person["age"];
+
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+<!--deleteキーワードは、プロパティの値とプロパティ自体の両方を削除します。
+削除後、プロパティは再び追加されるまで使用できません。
+
+deleteオペレータは、オブジェクトのプロパティに使用されるように設計されています。変数や関数には影響しません。
+deleteオペレータは、あらかじめ定義されたJavaScriptオブジェクトのプロパティに使用すべきではありません。
+アプリケーションがクラッシュする可能性があります。
+-->

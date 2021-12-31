@@ -1,0 +1,30 @@
+<!--新しいプロパティの追加
+値を指定するだけで、既存のオブジェクトに新しいプロパティを追加できます。
+
+人物オブジェクトがすでに存在すると仮定します。次に、新しいプロパティを指定できます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Properties</h2>
+<p>Add a new property to an existing object:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+</script>
+
+</body>
+</html>

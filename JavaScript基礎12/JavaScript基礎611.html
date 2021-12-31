@@ -1,0 +1,38 @@
+<!--javaScriptのプロパティ
+プロパティは、JavaScriptオブジェクトに関連付けられた値です。
+JavaScriptオブジェクトは、順序付けされていないプロパティのコレクションです。
+
+プロパティは通常、変更、追加、および削除できますが、一部は読み取り専用です。
+JavaScriptプロパティへのアクセス
+オブジェクトのプロパティにアクセスするための構文は次のとおりです。
+
+objectName.property      // person.age
+また
+
+objectName["property"]   // person["age"]
+また
+
+objectName[expression]   // x = "age"; person[x]-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Properties</h2>
+<p>Access a property with .property:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
